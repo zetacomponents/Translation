@@ -277,6 +277,11 @@ class ezcTranslationTsBackendTest extends ezcTestCase
      */
     public function testReader1()
     {
+		if ( !ezcBaseFeatures::classExists( 'SimpleXMLIterator' ) )
+		{
+            $this->markTestSkipped( "This test is supposed to run only when the SimpleXML extension is available." );
+		}
+
         $currentDir = dirname( __FILE__ );
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
@@ -294,6 +299,11 @@ class ezcTranslationTsBackendTest extends ezcTestCase
 
     public function testReader2()
     {
+		if ( !ezcBaseFeatures::classExists( 'SimpleXMLIterator' ) )
+		{
+            $this->markTestSkipped( "This test is supposed to run only when the SimpleXML extension is available." );
+		}
+
         $currentDir = dirname( __FILE__ );
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
@@ -315,6 +325,11 @@ class ezcTranslationTsBackendTest extends ezcTestCase
 
     public function testReader3()
     {
+		if ( !ezcBaseFeatures::classExists( 'SimpleXMLIterator' ) )
+		{
+            $this->markTestSkipped( "This test is supposed to run only when the SimpleXML extension is available." );
+		}
+
         $currentDir = dirname( __FILE__ );
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
@@ -331,6 +346,11 @@ class ezcTranslationTsBackendTest extends ezcTestCase
 
     public function testReader4()
     {
+		if ( !ezcBaseFeatures::classExists( 'SimpleXMLIterator' ) )
+		{
+            $this->markTestSkipped( "This test is supposed to run only when the SimpleXML extension is available." );
+		}
+
         $currentDir = dirname( __FILE__ );
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
@@ -357,6 +377,11 @@ class ezcTranslationTsBackendTest extends ezcTestCase
 
     public function testReader5()
     {
+		if ( !ezcBaseFeatures::classExists( 'SimpleXMLIterator' ) )
+		{
+            $this->markTestSkipped( "This test is supposed to run only when the SimpleXML extension is available." );
+		}
+
         $currentDir = dirname( __FILE__ );
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
