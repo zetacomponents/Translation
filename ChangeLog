@@ -1,3 +1,10 @@
+1.4.1 - Wednesday 27 February 2019
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Fixed compatibility with preg_replace and e modifier since PHP 5.4.
+- Update phpunit dependency to 7.4 (and hence PHP 7.1.).
+
+
 1.4 - Saturday 27 September 2014
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
