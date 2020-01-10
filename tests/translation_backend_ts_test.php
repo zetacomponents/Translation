@@ -180,6 +180,7 @@ class ezcTranslationTsBackendTest extends ezcTestCase
         $backend = new ezcTranslationTsBackend( "{$currentDir}/files/translations" );
         $backend->setOptions( array ( 'format' => '[LOCALE].xml' ) );
         $xml = $backend->openTranslationFile( 'nl-nl' );
+        self::assertIsObject($xml);
     }
 
     public function testOpenTranslationFileMissing()
